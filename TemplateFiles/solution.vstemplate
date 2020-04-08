@@ -1,0 +1,35 @@
+﻿<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>FI - Layered Architecture Solution Template</Name>
+    <Description>A layered architecture solution template for C#</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>FIApp</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Business" CopyParameters="true">
+        Business\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+	  <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+        Core\MyTemplate.vstemplate
+      </ProjectTemplateLink>	
+	  <ProjectTemplateLink ProjectName="$safeprojectname$.DataAccess" CopyParameters="true">
+        DataAccess\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+	  <ProjectTemplateLink ProjectName="$safeprojectname$.Entities" CopyParameters="true">
+        Entities\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+	  <ProjectTemplateLink ProjectName="$safeprojectname$.MVCWebUI" CopyParameters="true">
+        MVCWebUI\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>
