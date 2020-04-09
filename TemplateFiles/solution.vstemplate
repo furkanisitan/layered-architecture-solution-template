@@ -16,19 +16,19 @@
   <TemplateContent>
     <ProjectCollection>
       <ProjectTemplateLink ProjectName="$safeprojectname$.Business" CopyParameters="true">
-        Business\MyTemplate.vstemplate
+        LAST.Business\MyTemplate.vstemplate
       </ProjectTemplateLink>
 	  <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
-        Core\MyTemplate.vstemplate
+        LAST.Core\MyTemplate.vstemplate
       </ProjectTemplateLink>	
 	  <ProjectTemplateLink ProjectName="$safeprojectname$.DataAccess" CopyParameters="true">
-        DataAccess\MyTemplate.vstemplate
+        LAST.DataAccess\MyTemplate.vstemplate
       </ProjectTemplateLink>
 	  <ProjectTemplateLink ProjectName="$safeprojectname$.Entities" CopyParameters="true">
-        Entities\MyTemplate.vstemplate
+        LAST.Entities\MyTemplate.vstemplate
       </ProjectTemplateLink>
 	  <ProjectTemplateLink ProjectName="$safeprojectname$.MVCWebUI" CopyParameters="true">
-        MVCWebUI\MyTemplate.vstemplate
+        LAST.MVCWebUI\MyTemplate.vstemplate
       </ProjectTemplateLink>
     </ProjectCollection>
   </TemplateContent>
